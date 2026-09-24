@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal | UPLFT</title>
+<meta name="description" content="Legal for UPLFT, a strength training app.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #16181d;
+    --soft: #545a66;
+    --line: #e3e6ec;
+    --card: #f7f8fa;
+    --accent: #4b4ddb;
+  }
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --bg: #101216;
+      --ink: #eceef2;
+      --soft: #9aa2b1;
+      --line: #262a33;
+      --card: #171a20;
+      --accent: #9a9cf5;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101216; --ink: #eceef2; --soft: #9aa2b1;
+      --line: #262a33; --card: #171a20; --accent: #9a9cf5;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101216; --ink: #eceef2; --soft: #9aa2b1;
+    --line: #262a33; --card: #171a20; --accent: #9a9cf5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 3rem 16px 5rem; }
+  header.site { border-bottom: 1px solid var(--line); margin-bottom: 2.5rem; padding-bottom: 1.25rem; }
+  header.site a.brand { color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: -0.02em; font-size: 1.05rem; }
+  header.site .back { float: right; font-size: .9rem; color: var(--soft); text-decoration: none; }
+  header.site .back:hover { color: var(--accent); }
+  h1 { font-size: 1.95rem; line-height: 1.2; letter-spacing: -0.025em; margin: 0 0 1.25rem; text-wrap: balance; }
+  h2 { font-size: 1.2rem; letter-spacing: -0.015em; margin: 2.75rem 0 .75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); text-wrap: balance; }
+  h3 { font-size: 1rem; margin: 1.75rem 0 .5rem; }
+  p, li { color: var(--ink); }
+  a { color: var(--accent); }
+  strong { font-weight: 650; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+  /* A markdown "---" immediately before a heading would otherwise draw the
+     rule twice: once for the hr, once for the heading's own border-top. */
+  hr + h2 { border-top: 0; padding-top: 0; margin-top: 1.5rem; }
+  h1 + h2, h2:first-of-type { border-top: 0; padding-top: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: .92rem; }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+  th { font-weight: 650; color: var(--soft); font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
+  /* The table gets a real minimum width and the CONTAINER scrolls. Letting a
+     three-column table squeeze into 375px produces columns one word wide with
+     the last one clipped at the screen edge - unreadable, and on a privacy
+     policy the clipped column is the one saying what we do with the data. */
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.25rem -16px; padding: 0 16px; }
+  .table-scroll table { min-width: 34rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  .cards { display: grid; gap: 1rem; margin: 2rem 0 0; }
+  .card { display: block; padding: 1.15rem 1.25rem; background: var(--card); border: 1px solid var(--line); border-radius: 12px; text-decoration: none; }
+  .card:hover { border-color: var(--accent); }
+  .card b { display: block; color: var(--ink); font-size: 1.02rem; margin-bottom: .2rem; }
+  .card span { color: var(--soft); font-size: .92rem; }
+  footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--soft); font-size: .85rem; }
+  footer a { color: var(--soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="/">UPLFT</a>
+  
+</header>
+<h1>UPLFT legal documents</h1>
+<p>UPLFT is a strength training app. These are the documents that govern it.</p>
+<div class="cards">
+  <a class="card" href="privacy.html"><b>Privacy Policy</b><span>What UPLFT holds about you, who else sees it, and how to get rid of it.</span></a>
+  <a class="card" href="terms.html"><b>Terms of Service</b><span>The agreement between you and UPLFT, including the training-risk terms.</span></a>
+  <a class="card" href="health-data.html"><b>Consumer Health Data Privacy Policy</b><span>Required separately by Washington’s My Health My Data Act. Covers health data specifically.</span></a>
+</div>
+<footer>
+  <p>UPLFT is operated by Jaden Joseph, Victoria, British Columbia, Canada.<br>
+  Questions about your data: <a href="mailto:hello@uplftapp.com">hello@uplftapp.com</a></p>
+</footer>
+</div>
+</body>
+</html>
