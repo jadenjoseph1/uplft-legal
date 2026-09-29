@@ -85,7 +85,7 @@
   <a class="back" href="/">All documents</a>
 </header>
 <h1>UPLFT Privacy Policy</h1>
-<p><strong>Effective Date: 25 September 2026</strong></p>
+<p><strong>Effective Date: 28 September 2026</strong></p>
 <blockquote>
 </blockquote>
 <p>UPLFT is a strength training application. It builds you a session, records how
@@ -95,8 +95,8 @@ holds, why, who else receives it, and how to have it erased.</p>
 <hr>
 <h2>1. Who We Are, and How to Reach Us</h2>
 <p>1.1 The UPLFT application (the &quot;<strong>Application</strong>&quot;) is operated by <strong>Jaden Joseph,
-carrying on business as UPLFT</strong>, a sole proprietorship of 2022 Hannington Road,
-Victoria, British Columbia, Canada (&quot;<strong>UPLFT</strong>&quot;, &quot;<strong>we</strong>&quot;, &quot;<strong>us</strong>&quot;, &quot;<strong>our</strong>&quot;).</p>
+carrying on business as UPLFT</strong>, a sole proprietorship of 1261 Rockhampton Clo,
+Victoria, British Columbia V9B 6X4, Canada (&quot;<strong>UPLFT</strong>&quot;, &quot;<strong>we</strong>&quot;, &quot;<strong>us</strong>&quot;, &quot;<strong>our</strong>&quot;).</p>
 <p>1.2 For any question about this policy or about your personal information,
 contact <strong><a href="mailto:hello@uplftapp.com">hello@uplftapp.com</a></strong>. We respond within <strong>five (5) business days</strong>, and
 within <strong>thirty (30) days</strong> to a formal request to access, correct or delete your
@@ -138,6 +138,13 @@ on another device.</li>
 <li><strong>Sleep.</strong> The hours you slept and your rating of the night. Unlike the rest of
 the check-in, this <strong>is</strong> uploaded and restored on a new device, because it
 forms part of your history rather than one morning&#39;s answer.</li>
+<li><strong>What you tell us after a session.</strong> How the session felt, how you felt
+afterwards, and any of the short notes you may attach to it (for example that
+you had slept poorly, or that it was a low-energy day). This is recorded
+against the session and <strong>is</strong> uploaded, because it is part of the record of
+that session and the engine reads it when choosing your next one. It is
+separate from the readiness check-in above, which you answer before training
+and which stays on your device.</li>
 <li><strong>Injuries and limitations.</strong> Areas you mark as painful or injured, and
 movements you block.</li>
 <li><strong>Food and drink you record</strong>, whether typed, spoken, photographed or scanned
@@ -162,6 +169,12 @@ whether your capability has <strong>decayed</strong> following a break.</li>
 </ul>
 <p>This information is used to select your next session. It is used for no other
 purpose.</p>
+<p>We also keep, separately from all of the above, <strong>a record of whether your
+subscription is currently active</strong>, consisting of your account identifier, a
+yes or no, and the date we last checked. It is obtained from RevenueCat and held
+so that features which cost us money to provide can be offered to subscribers
+without our having to ask RevenueCat on every single request. It contains no
+payment details of any kind, and it is deleted with your account.</p>
 <h3>4.3 Information collected automatically</h3>
 <ul>
 <li><strong>Crash and performance data</strong>, when the Application fails or performs poorly.
@@ -172,6 +185,7 @@ whether one person is encountering the same fault repeatedly.</li>
 <p>We operate <strong>no product analytics</strong>. We do not record which screens you visit or
 how long you spend on them.</p>
 <h2>5. Health and Fitness Information</h2>
+<p><strong>This is the most consequential category, so it is stated separately.</strong></p>
 <h3>5.1 What we hold</h3>
 <p>Exercises performed; sets, repetitions, loads and difficulty ratings; session
 dates, duration and completion; body weight, height and weigh-ins; readiness
@@ -242,7 +256,7 @@ not a disclosure.</p>
 <tr>
 <td><strong>RevenueCat</strong></td>
 <td>Your account identifier, your purchase history, <strong>and your email address</strong></td>
-<td>Determines whether your subscription is active.</td>
+<td>Determines whether your subscription is active. We keep our own record of that answer, described in section 4.2, so that we need not ask on every request.</td>
 </tr>
 <tr>
 <td><strong>Apple</strong></td>
@@ -352,7 +366,17 @@ drafted to satisfy them.</p>
 <tr>
 <td>Backups</td>
 <td>Until our hosting provider&#39;s rotation overwrites them</td>
-<td>We maintain no backups of our own. Supabase takes automated backups and purges them on its own schedule, so deleted data may persist in a backup for a short period before being overwritten</td>
+<td>Two kinds. The version archive described in the row above is ours, held in our database and removed when you delete your account. Separately, Supabase takes automated backups of the whole database and purges them on its own schedule, so deleted data may persist in one for a short period before being overwritten</td>
+</tr>
+<tr>
+<td>Copies held on your own device</td>
+<td>Up to <strong>five (5)</strong>, replaced oldest-first</td>
+<td>Before anything that replaces the data on your phone -- signing in, switching accounts, signing out -- the Application saves a copy locally so that a failed synchronisation cannot lose your training. These never leave your device, are listed under Settings, and <strong>all of them are destroyed when you delete your account</strong></td>
+</tr>
+<tr>
+<td>Whether your subscription is active</td>
+<td>While your account remains open</td>
+<td>A yes or no and the date we last checked, described in section 4.2. Deleted with your account</td>
 </tr>
 <tr>
 <td>Crash and diagnostic data</td>
@@ -389,12 +413,23 @@ again.</p>
 <ul>
 <li><strong>Payment records</strong>, where Canadian tax law requires us to retain them.</li>
 <li><strong>Crash reports already transmitted to Sentry.</strong> These carry your account
-number and age out on Sentry&#39;s own ninety-day schedule. They contain no
+identifier and age out on Sentry&#39;s own ninety-day schedule. They contain no
 training data, no photographs and no food record.</li>
+<li><strong>Your subscriber record at RevenueCat</strong>, in the event that our automated
+request to delete it does not succeed. It holds your email address and your
+purchase history. We attempt this deletion every time, and we do not allow a
+failure to stop the rest of your erasure, because your right to be erased
+cannot depend on whether a billing provider is reachable. Where it fails, the
+record remains until we remove it by hand.</li>
+<li><strong>Records held by our service providers in their own operational logs</strong>, which
+we cannot reach. Our email provider retains a delivery record of each sign-in
+message, our hosting provider retains request logs, and our update service
+retains a record of update checks. Each names its own retention period in the
+policy linked in section 8.</li>
 </ul>
-<p>That is the entire list. We would rather name those two than claim a clean sweep
-we do not perform. If you wish the crash reports removed sooner, contact
-<strong><a href="mailto:hello@uplftapp.com">hello@uplftapp.com</a></strong> and we will do so by hand.</p>
+<p>That is the entire list. We would rather name those four than claim a clean
+sweep we do not perform. If you wish any of them removed sooner, contact
+<strong><a href="mailto:hello@uplftapp.com">hello@uplftapp.com</a></strong> and we will do what we can by hand.</p>
 <p>11.5 <strong>Deletion does not cancel your subscription.</strong> Apple administers billing,
 and you must cancel in <em>Settings, Apple Account, Subscriptions</em> on your device.
 We cannot cancel it on your behalf.</p>
@@ -505,8 +540,8 @@ a complaint in order to have your data deleted.</strong> That control is in the
 Application.</p>
 <h2>21. Contact</h2>
 <p><strong>Jaden Joseph, carrying on business as UPLFT</strong>
-2022 Hannington Road
-Victoria, British Columbia, Canada
+1261 Rockhampton Clo
+Victoria, British Columbia V9B 6X4, Canada
 <strong><a href="mailto:hello@uplftapp.com">hello@uplftapp.com</a></strong></p>
 
 <footer>
